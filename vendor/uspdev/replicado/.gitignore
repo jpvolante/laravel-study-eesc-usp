@@ -1,0 +1,29 @@
+/vendor/
+*~
+*.swp
+src/replicado_queries
+composer.lock
+.phpunit.result.cache
+
+.idea
+
+# index.php used for test
+index.php
+.env
+
+# test
+test.php
+log.log
+credentials.php
+
+# netbeans
+nbproject/
+
+# phpdoc
+docs/phpdoc-cache*
+
+sandbox/
+
+test*.php
+
+/docs/

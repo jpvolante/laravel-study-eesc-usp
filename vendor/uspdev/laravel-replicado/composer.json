@@ -1,0 +1,27 @@
+{
+    "name": "uspdev/laravel-replicado",
+    "description": "Wrapper laravel para uspdev/replicado",
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Masaki Kawabata Neto",
+            "email": "kawabata@usp.br"
+        }
+    ],
+    "require": {
+        "uspdev/replicado": "^1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uspdev\\LaravelReplicado\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uspdev\\LaravelReplicado\\ReplicadoServiceProvider"
+            ]
+        }
+    }
+}

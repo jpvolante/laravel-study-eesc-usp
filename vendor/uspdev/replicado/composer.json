@@ -1,0 +1,36 @@
+{
+    "name": "uspdev/replicado",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "homepage": "https://github.com/uspdev/replicado",
+    "description": "Classes PHP que consome dados do Replicado USP",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Thiago Gomes Verissimo",
+            "email": "thiago.verissimo@usp.br",
+            "homepage": "https://github.com/thiagogomesverissimo"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Uspdev\\Replicado\\" : "src"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Uspdev\\Replicado\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "ext-pdo_dblib": "*",
+        "monolog/monolog": "^2 || ^3",
+        "uspdev/cache": "^1",
+        "illuminate/collections": "^8 || ^9 || ^10 || ^11"
+    }
+}

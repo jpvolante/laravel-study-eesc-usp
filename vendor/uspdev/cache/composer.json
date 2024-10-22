@@ -1,0 +1,21 @@
+{
+    "name": "uspdev/cache",
+    "homepage": "https://github.com/uspdev/cache",
+    "description": "Library to connect to cache server",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Masaki Kawabata Neto",
+            "email": "masaki.kawabata@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Uspdev\\Cache\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.0"
+    }
+}

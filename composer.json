@@ -8,7 +8,12 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "uspdev/laravel-usp-theme": "^2.8"
+        "laravel/ui": "^4.5",
+        "uspdev/cache": "^1.0",
+        "uspdev/laravel-replicado": "^1.0",
+        "uspdev/laravel-usp-theme": "^2.8",
+        "uspdev/replicado": "^1.24",
+        "uspdev/senhaunica-socialite": "^4.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
