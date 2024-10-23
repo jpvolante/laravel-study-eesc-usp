@@ -18,11 +18,13 @@ class LivroFactory extends Factory
      */
     public function definition(): array
     {
+        $tipos = Livro::tipos();
         return [
             'titulo' => $this->faker->sentence(3),
             'autor' => $this->faker->name,
             'isbn' => $this->faker->ean13(),
             'user_id' => User::factory(), // Cria um usuário associado ao livro
-        ];
+            'tipo' => $tipos[array_rand($tipos)]
+        ];  
     }
 }
