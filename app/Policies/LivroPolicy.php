@@ -13,7 +13,7 @@ class LivroPolicy
      */
     public function viewAny(User $user): bool
     {
-        //
+        return TRUE;
     }
 
     /**
@@ -45,7 +45,7 @@ class LivroPolicy
      */
     public function delete(User $user, Livro $livro): bool
     {
-        //
+        return FALSE;
     }
 
     /**

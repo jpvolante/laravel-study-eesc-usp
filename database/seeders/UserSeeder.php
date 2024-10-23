@@ -13,22 +13,18 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        
         $user = [
             'codpes' => '123456',
             'email' => 'qualquer@usp.br',
             'name' => 'Fulano da Silva',
+            'is_admin' => true,
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'
         ];
 
-        $createdUser = User::create($user);
+        User::create($user);
 
-    if ($createdUser) {
-        echo "Usuário criado com sucesso: " . $createdUser->name . "\n";
-    } else {
-        echo "Erro ao criar usuário.\n";
-    }
-
-        
+        // Criando mais 10 usuários de teste usando a fábrica
         User::factory(10)->create();
     }
 }
