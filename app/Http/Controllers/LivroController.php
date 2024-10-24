@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\StoreLivroRequest;
 use App\Http\Requests\UpdateLivroRequest;
 use App\Http\Requests\LivroRequest;
+use App\Service\LivroStepper;
 
 class LivroController extends Controller
 {
@@ -22,10 +23,11 @@ class LivroController extends Controller
             $livros = Livro::paginate(5);
         }
 
-
+        $stepper = new LivroStepper();
 
         return view('livros.index', [
-            'livros' => $livros
+            'livros' => $livros,
+            'stepper' => $stepper->render()
         ]);
     }
 
@@ -48,6 +50,8 @@ class LivroController extends Controller
         $validated['user_id'] = auth()->user()->id;
 
         $livro = Livro::create($validated);
+
+        $livro->setStatus('Solicitado');
       
         return redirect("/livros/{$livro->id}");
        
@@ -56,11 +60,14 @@ class LivroController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Livro $livro)
+    public function show(Livro $livro, LivroStepper $stepper)
     {
+
+        $stepper->setCurrentStepName($livro->status);
         
         return view('livros.show', [
             'livro' => $livro,
+            'stepper' => $stepper->render()
         ]);
     }
 
@@ -69,8 +76,10 @@ class LivroController extends Controller
      */
     public function edit(Livro $livro)
     {
+        $stepper = new LivroStepper();
         return view('livros.edit', [
-            'livro' => $livro
+            'livro' => $livro,
+            'stepper' => $stepper->render()
         ]);
     }
 
@@ -93,5 +102,17 @@ class LivroController extends Controller
     {
         $livro->delete();
         return redirect('/livros');
+    }
+
+    public function cotacao(Livro $livro)
+    {
+        $livro->setStatus('Em cotação');
+        return redirect("/livros/{$livro->id}");
+    }
+
+    public function devolver(Livro $livro)
+    {
+        $livro->setStatus('Solicitado');
+        return redirect("/livros/{$livro->id}");
     }
 }

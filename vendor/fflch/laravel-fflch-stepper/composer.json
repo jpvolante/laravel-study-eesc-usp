@@ -1,0 +1,28 @@
+{
+    "name": "fflch/laravel-fflch-stepper",
+    "minimum-stability": "dev",
+    "description": "fflch stepper for laravel",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Thiago Gomes Verissimo",
+            "email": "thiago.verissimo@usp.br"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fflch\\LaravelFflchStepper\\LaravelFflchStepperServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4" : {
+            "Fflch\\LaravelFflchStepper\\" : "src"
+        }
+    },
+    "require": {
+        "fflch/laravel-stepper": "^1.8.1"
+    }
+}

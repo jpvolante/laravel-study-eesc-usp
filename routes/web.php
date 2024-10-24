@@ -17,3 +17,10 @@ Route::get('login/senhaunica', [LoginController::class,'redirectToProvider']);
 Route::get('/logincallback', [LoginController::class,'handleProviderCallback']);
 Route::get('/novoadmin', [UserController::class, 'form']);
 Route::post('/novoadmin', [UserController::class, 'register']);
+
+Route::resource('/livros', LivroController::class);
+Route::get('/livros/{isbn}', [LivroController::class, 'show']);
+
+Route::get('/livros/{livro}/cotacao', [LivroController::class, 'cotacao']);
+
+Route::get('/livros/{livro}/devolver', [LivroController::class, 'devolver']);

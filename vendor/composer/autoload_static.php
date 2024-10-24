@@ -104,6 +104,7 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Clock\\' => 24,
             'Spatie\\Permission\\' => 18,
+            'Spatie\\ModelStatus\\' => 19,
             'SocialiteProviders\\Manager\\' => 27,
         ),
         'R' => 
@@ -173,6 +174,7 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         array (
             'Fruitcake\\Cors\\' => 15,
             'Firebase\\JWT\\' => 13,
+            'Fflch\\LaravelFflchStepper\\' => 26,
             'Faker\\' => 6,
         ),
         'E' => 
@@ -203,6 +205,7 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         ),
         'A' => 
         array (
+            'Axn\\LaravelStepper\\' => 19,
             'App\\' => 4,
         ),
     );
@@ -371,6 +374,10 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         'Spatie\\Permission\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-permission/src',
+        ),
+        'Spatie\\ModelStatus\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-model-status/src',
         ),
         'SocialiteProviders\\Manager\\' => 
         array (
@@ -543,6 +550,10 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
+        'Fflch\\LaravelFflchStepper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fflch/laravel-fflch-stepper/src',
+        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
@@ -605,6 +616,11 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
+        'Axn\\LaravelStepper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/axn/laravel-stepper/src',
+            1 => __DIR__ . '/..' . '/fflch/laravel-stepper/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -617,14 +633,24 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         'App\\Http\\Controllers\\IndexController' => __DIR__ . '/../..' . '/app/Http/Controllers/IndexController.php',
         'App\\Http\\Controllers\\LivroController' => __DIR__ . '/../..' . '/app/Http/Controllers/LivroController.php',
         'App\\Http\\Controllers\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/LoginController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Requests\\LivroRequest' => __DIR__ . '/../..' . '/app/Http/Requests/LivroRequest.php',
         'App\\Http\\Requests\\StoreLivroRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreLivroRequest.php',
         'App\\Http\\Requests\\UpdateLivroRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateLivroRequest.php',
+        'App\\Listeners\\ListenerStatusUpdated' => __DIR__ . '/../..' . '/app/Listeners/ListenerStatusUpdated.php',
         'App\\Models\\Livro' => __DIR__ . '/../..' . '/app/Models/Livro.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Policies\\LivroPolicy' => __DIR__ . '/../..' . '/app/Policies/LivroPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
+        'App\\Service\\LivroStepper' => __DIR__ . '/../..' . '/app/Service/LivroStepper.php',
+        'App\\Traits\\HasStatuses' => __DIR__ . '/../..' . '/app/Traits/HasStatuses.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Axn\\LaravelStepper\\MissingMandatoryParameterException' => __DIR__ . '/..' . '/axn/laravel-stepper/src/MissingMandatoryParameterException.php',
+        'Axn\\LaravelStepper\\ServiceProvider' => __DIR__ . '/..' . '/axn/laravel-stepper/src/ServiceProvider.php',
+        'Axn\\LaravelStepper\\Step' => __DIR__ . '/..' . '/axn/laravel-stepper/src/Step.php',
+        'Axn\\LaravelStepper\\StepInterface' => __DIR__ . '/..' . '/axn/laravel-stepper/src/StepInterface.php',
+        'Axn\\LaravelStepper\\Stepper' => __DIR__ . '/..' . '/axn/laravel-stepper/src/Stepper.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
         'Brick\\Math\\BigNumber' => __DIR__ . '/..' . '/brick/math/src/BigNumber.php',
@@ -1798,6 +1824,8 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         'Faker\\Provider\\zh_TW\\Text' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/zh_TW/Text.php',
         'Faker\\UniqueGenerator' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/UniqueGenerator.php',
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/ValidGenerator.php',
+        'Fflch\\LaravelFflchStepper\\LaravelFflchStepperServiceProvider' => __DIR__ . '/..' . '/fflch/laravel-fflch-stepper/src/LaravelFflchStepperServiceProvider.php',
+        'Fflch\\LaravelFflchStepper\\Stepper' => __DIR__ . '/..' . '/fflch/laravel-fflch-stepper/src/Stepper.php',
         'Firebase\\JWT\\BeforeValidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/BeforeValidException.php',
         'Firebase\\JWT\\CachedKeySet' => __DIR__ . '/..' . '/firebase/php-jwt/src/CachedKeySet.php',
         'Firebase\\JWT\\ExpiredException' => __DIR__ . '/..' . '/firebase/php-jwt/src/ExpiredException.php',
@@ -5991,6 +6019,12 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         'SocialiteProviders\\Manager\\OAuth2\\User' => __DIR__ . '/..' . '/socialiteproviders/manager/src/OAuth2/User.php',
         'SocialiteProviders\\Manager\\ServiceProvider' => __DIR__ . '/..' . '/socialiteproviders/manager/src/ServiceProvider.php',
         'SocialiteProviders\\Manager\\SocialiteWasCalled' => __DIR__ . '/..' . '/socialiteproviders/manager/src/SocialiteWasCalled.php',
+        'Spatie\\ModelStatus\\Events\\StatusUpdated' => __DIR__ . '/..' . '/spatie/laravel-model-status/src/Events/StatusUpdated.php',
+        'Spatie\\ModelStatus\\Exceptions\\InvalidStatus' => __DIR__ . '/..' . '/spatie/laravel-model-status/src/Exceptions/InvalidStatus.php',
+        'Spatie\\ModelStatus\\Exceptions\\InvalidStatusModel' => __DIR__ . '/..' . '/spatie/laravel-model-status/src/Exceptions/InvalidStatusModel.php',
+        'Spatie\\ModelStatus\\HasStatuses' => __DIR__ . '/..' . '/spatie/laravel-model-status/src/HasStatuses.php',
+        'Spatie\\ModelStatus\\ModelStatusServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-model-status/src/ModelStatusServiceProvider.php',
+        'Spatie\\ModelStatus\\Status' => __DIR__ . '/..' . '/spatie/laravel-model-status/src/Status.php',
         'Spatie\\Permission\\Commands\\CacheReset' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CacheReset.php',
         'Spatie\\Permission\\Commands\\CreatePermission' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreatePermission.php',
         'Spatie\\Permission\\Commands\\CreateRole' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreateRole.php',

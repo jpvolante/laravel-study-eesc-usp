@@ -1,0 +1,29 @@
+{
+    "name" : "fflch/laravel-stepper",
+    "description" : "Step by step Laravel 5 helper.",
+    "homepage" : "https://github.com/AXN-Informatique/laravel-stepper",
+    "support" : {
+        "issues" : "https://github.com/AXN-Informatique/laravel-stepper/issues"
+    },
+    "authors" : [{
+            "name" : "AXN Informatique",
+            "email" : "developpement@axn.fr"
+        }
+    ],
+    "license" : "MIT",
+    "require" : {
+        "illuminate/support" : "~5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Axn\\LaravelStepper\\" : "src/"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Axn\\LaravelStepper\\ServiceProvider"
+            ]
+        }
+    }
+}

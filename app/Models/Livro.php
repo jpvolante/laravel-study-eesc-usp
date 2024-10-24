@@ -5,10 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory; // Importação correta do trait
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
+use Spatie;
+
 
 class Livro extends Model
 {
     use HasFactory; 
+    use \App\Traits\HasStatuses;
+
+    const status = [
+        'Solicitado',
+        'Em contação',
+        'Comprado'
+    ];
     protected $guarded = ['id'];
 
     public function user(){
