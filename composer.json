@@ -15,6 +15,7 @@
         "spatie/laravel-model-status": "^1.18",
         "uspdev/cache": "^1.0",
         "uspdev/laravel-replicado": "^1.0",
+        "uspdev/laravel-usp-faker": "^1.0",
         "uspdev/laravel-usp-theme": "^2.8",
         "uspdev/replicado": "^1.24",
         "uspdev/senhaunica-socialite": "^4.3"

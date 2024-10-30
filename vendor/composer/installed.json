@@ -9193,6 +9193,56 @@
             "install-path": "../uspdev/laravel-replicado"
         },
         {
+            "name": "uspdev/laravel-usp-faker",
+            "version": "1.0.7",
+            "version_normalized": "1.0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uspdev/laravel-usp-faker.git",
+                "reference": "3c2f3d656a35b7664aa87ded0566bfc4970c7638"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uspdev/laravel-usp-faker/zipball/3c2f3d656a35b7664aa87ded0566bfc4970c7638",
+                "reference": "3c2f3d656a35b7664aa87ded0566bfc4970c7638",
+                "shasum": ""
+            },
+            "require": {
+                "uspdev/replicado": "^1.0"
+            },
+            "time": "2023-06-26T12:37:38+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Uspdev\\UspdevFakerServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Uspdev\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Veríssimo",
+                    "email": "verissimotgv@gmail.com"
+                }
+            ],
+            "description": "Uma biblioteca para geração de faker no contexto USP",
+            "support": {
+                "issues": "https://github.com/uspdev/laravel-usp-faker/issues",
+                "source": "https://github.com/uspdev/laravel-usp-faker/tree/1.0.7"
+            },
+            "install-path": "../uspdev/laravel-usp-faker"
+        },
+        {
             "name": "uspdev/laravel-usp-theme",
             "version": "2.8.8",
             "version_normalized": "2.8.8.0",
@@ -9299,17 +9349,17 @@
         },
         {
             "name": "uspdev/senhaunica-socialite",
-            "version": "4.3.16",
-            "version_normalized": "4.3.16.0",
+            "version": "4.3.17",
+            "version_normalized": "4.3.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/senhaunica-socialite.git",
-                "reference": "906d6441abd913ae313cebb2b1e86a6c14509188"
+                "reference": "d7f128c5707197f728e63dd6599e51a96b431c20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/senhaunica-socialite/zipball/906d6441abd913ae313cebb2b1e86a6c14509188",
-                "reference": "906d6441abd913ae313cebb2b1e86a6c14509188",
+                "url": "https://api.github.com/repos/uspdev/senhaunica-socialite/zipball/d7f128c5707197f728e63dd6599e51a96b431c20",
+                "reference": "d7f128c5707197f728e63dd6599e51a96b431c20",
                 "shasum": ""
             },
             "require": {
@@ -9320,7 +9370,7 @@
                 "socialiteproviders/manager": "^3.4.2 | ^4.0",
                 "spatie/laravel-permission": "^4.2 | ^5.0 | ^6.0"
             },
-            "time": "2024-10-19T23:15:36+00:00",
+            "time": "2024-10-24T19:40:56+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -9353,7 +9403,7 @@
             "homepage": "https://github.com/uspdev/senhaunica-socialite",
             "support": {
                 "issues": "https://github.com/uspdev/senhaunica-socialite/issues",
-                "source": "https://github.com/uspdev/senhaunica-socialite/tree/4.3.16"
+                "source": "https://github.com/uspdev/senhaunica-socialite/tree/4.3.17"
             },
             "install-path": "../uspdev/senhaunica-socialite"
         },

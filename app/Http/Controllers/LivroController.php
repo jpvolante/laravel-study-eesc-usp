@@ -8,6 +8,7 @@ use App\Http\Requests\StoreLivroRequest;
 use App\Http\Requests\UpdateLivroRequest;
 use App\Http\Requests\LivroRequest;
 use App\Service\LivroStepper;
+use Storage;
 
 class LivroController extends Controller
 {
@@ -76,13 +77,16 @@ class LivroController extends Controller
      */
     public function edit(Livro $livro)
     {
+        // Gera a URL acessível para a imagem
+        $livro->image_url = Storage::url($livro->caminho_arquivo);
+    
         $stepper = new LivroStepper();
         return view('livros.edit', [
             'livro' => $livro,
             'stepper' => $stepper->render()
         ]);
     }
-
+    
     /**
      * Update the specified resource in storage.
      */

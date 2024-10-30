@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        UserSeeder::class;
         LivroSeeder::class;
         // Cria 20 usuários
         User::factory()->count(20)->create();

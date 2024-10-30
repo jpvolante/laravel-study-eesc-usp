@@ -24,12 +24,12 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         '2203a247e6fda86070a5e4e07aed533a' => __DIR__ . '/..' . '/symfony/clock/Resources/now.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
+        '1796d19e76addb1e45a93616baaf30d4' => __DIR__ . '/..' . '/uspdev/replicado/helpers/helpers.php',
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
-        '1796d19e76addb1e45a93616baaf30d4' => __DIR__ . '/..' . '/uspdev/replicado/helpers/helpers.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f57d353b41eb2e234b26064d63d8c5dd' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Filesystem/functions.php',
@@ -66,6 +66,7 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
             'Uspdev\\Replicado\\' => 17,
             'Uspdev\\LaravelReplicado\\' => 24,
             'Uspdev\\Cache\\' => 13,
+            'Uspdev\\' => 7,
         ),
         'T' => 
         array (
@@ -246,6 +247,10 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         'Uspdev\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/uspdev/cache/src',
+        ),
+        'Uspdev\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/uspdev/laravel-usp-faker/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -643,6 +648,7 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         'App\\Policies\\LivroPolicy' => __DIR__ . '/../..' . '/app/Policies/LivroPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
+        'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Service\\LivroStepper' => __DIR__ . '/../..' . '/app/Service/LivroStepper.php',
         'App\\Traits\\HasStatuses' => __DIR__ . '/../..' . '/app/Traits/HasStatuses.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -7072,6 +7078,7 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'Uspdev\\Cache\\Cache' => __DIR__ . '/..' . '/uspdev/cache/src/Cache.php',
         'Uspdev\\LaravelReplicado\\ReplicadoServiceProvider' => __DIR__ . '/..' . '/uspdev/laravel-replicado/src/ReplicadoServiceProvider.php',
+        'Uspdev\\Provider\\ReplicadoFaker' => __DIR__ . '/..' . '/uspdev/laravel-usp-faker/src/Provider/ReplicadoFaker.php',
         'Uspdev\\Replicado\\Bempatrimoniado' => __DIR__ . '/..' . '/uspdev/replicado/src/Bempatrimoniado.php',
         'Uspdev\\Replicado\\Beneficio' => __DIR__ . '/..' . '/uspdev/replicado/src/Beneficio.php',
         'Uspdev\\Replicado\\CEU' => __DIR__ . '/..' . '/uspdev/replicado/src/CEU.php',
@@ -7099,6 +7106,8 @@ class ComposerStaticInit879653d8a82dfa69ebbb1a0402bf00c3
         'Uspdev\\UspTheme\\Facades\\UspTheme' => __DIR__ . '/..' . '/uspdev/laravel-usp-theme/src/Facades/UspTheme.php',
         'Uspdev\\UspTheme\\ServiceProvider' => __DIR__ . '/..' . '/uspdev/laravel-usp-theme/src/ServiceProvider.php',
         'Uspdev\\UspTheme\\UspTheme' => __DIR__ . '/..' . '/uspdev/laravel-usp-theme/src/UspTheme.php',
+        'Uspdev\\UspdevFakerServiceProvider' => __DIR__ . '/..' . '/uspdev/laravel-usp-faker/src/UspdevFakerServiceProvider.php',
+        'Uspdev\\Utils\\RandomReplicado' => __DIR__ . '/..' . '/uspdev/laravel-usp-faker/src/Utils/RandomReplicado.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\InvalidArgumentException' => __DIR__ . '/..' . '/webmozart/assert/src/InvalidArgumentException.php',

@@ -30,14 +30,14 @@ class LoginController extends Controller
     }
 
     public function handleProviderCallback(){
+
         $userSenhaUnica = Socialite::driver('senhaunica')->user();
 
-        dd($userSenhaUnica);
+        
         $user = User::where('codpes', $userSenhaUnica->codpes)->first();
         
         if(is_null($user)) $user = new User;
 
-        //bind dos dados retornados
         $user->codpes = $userSenhaUnica->codpes;
         $user->email = $userSenhaUnica->email;
         $user->name = $userSenhaUnica->nompes;

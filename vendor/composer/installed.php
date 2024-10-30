@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '174ba714af81637e42a7365149681639aab830a8',
+        'reference' => '68453fefb5912bb1f5896ce02a99bfeb35642e57',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -451,7 +451,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '174ba714af81637e42a7365149681639aab830a8',
+            'reference' => '68453fefb5912bb1f5896ce02a99bfeb35642e57',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -889,8 +889,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '3.0.0',
-                1 => '1.0|2.0|3.0',
+                0 => '1.0|2.0|3.0',
+                1 => '3.0.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -1427,6 +1427,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'uspdev/laravel-usp-faker' => array(
+            'pretty_version' => '1.0.7',
+            'version' => '1.0.7.0',
+            'reference' => '3c2f3d656a35b7664aa87ded0566bfc4970c7638',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../uspdev/laravel-usp-faker',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'uspdev/laravel-usp-theme' => array(
             'pretty_version' => '2.8.8',
             'version' => '2.8.8.0',
@@ -1446,9 +1455,9 @@
             'dev_requirement' => false,
         ),
         'uspdev/senhaunica-socialite' => array(
-            'pretty_version' => '4.3.16',
-            'version' => '4.3.16.0',
-            'reference' => '906d6441abd913ae313cebb2b1e86a6c14509188',
+            'pretty_version' => '4.3.17',
+            'version' => '4.3.17.0',
+            'reference' => 'd7f128c5707197f728e63dd6599e51a96b431c20',
             'type' => 'library',
             'install_path' => __DIR__ . '/../uspdev/senhaunica-socialite',
             'aliases' => array(),
